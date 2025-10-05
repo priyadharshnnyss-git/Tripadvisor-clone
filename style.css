@@ -1,0 +1,564 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --ta-green-dark: #00a680; 
+    --ta-green-light: #34e0a1; 
+    --ta-dark-gray: #1a1a1a;
+    --ta-text-color: #333;
+    --ta-text-light: #555;
+    --bg-light-gray: #f7f7f7;
+    --bg-black-footer: #1e1e1e; 
+    --max-content-width: 1200px; 
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #fff; 
+    color: var(--ta-text-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.content-section, .promo-banner-large, .footer-content, .trip-plan-banner {
+    max-width: var(--max-content-width); 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #fff;
+    border-bottom: 1px solid var(--ta-light-gray);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    
+    max-width: 1400px; 
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-icon {
+    font-size: 24px;
+    color: var(--ta-green-dark);
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--ta-green-dark);
+}
+
+.main-nav {
+    
+    display: flex;
+    gap: 30px;
+    flex-grow: 1; 
+    padding-left: 40px; 
+}
+
+.main-nav a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ta-text-light);
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.signin-btn {
+    background-color: var(--ta-green-dark);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+
+.search-hero-section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.search-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.search-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--ta-text-light);
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+    color: var(--ta-dark-gray);
+    border-bottom-color: var(--ta-dark-gray);
+    font-weight: 700;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--ta-light-gray);
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 5px 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-form input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 0 5px 10px; 
+}
+
+.search-form .search-btn {
+    background-color: var(--ta-green-light);
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 5px 0 5px 10px; 
+}
+
+
+.promo-banner-large {
+    height: 400px;
+    background-color: var(--ta-green-dark);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+    
+    width: var(--max-content-width); 
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+.banner-overlay {
+    height: 100%;
+    
+    justify-content: center; 
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 50px; 
+    width: 100%;
+}
+
+.award-text {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+    max-width: 600px;
+}
+
+
+.grid-card-list {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-4-col {
+    
+    grid-template-columns: repeat(4, 1fr); 
+}
+
+.photo-card {
+    height: 300px; 
+    border-radius: 12px;
+}
+
+
+
+.card-scroll-container {
+    display: flex;
+    
+    overflow-x: auto; 
+    gap: 20px;
+    padding-bottom: 20px; 
+    position: relative;
+    
+    
+    margin-left: -20px; 
+    margin-right: -20px; 
+    padding-left: 20px; 
+    padding-right: 20px;
+    
+    
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+
+
+.card-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.activity-card {
+    
+    flex: 0 0 280px; 
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    width: 100%; 
+}
+
+
+.scroll-arrow {
+    position: absolute;
+    
+    right: 20px; 
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid var(--ta-light-gray);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+
+.trip-plan-banner {
+    background-color: var(--ta-green-light); 
+    padding: 20px;
+    margin: 40px auto;
+    max-width: var(--max-content-width);
+    border-radius: 8px;
+}
+
+.plan-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0; 
+}
+
+.phone-mockup {
+    width: 150px;
+    height: 180px;
+    flex-shrink: 0;
+    transform: rotate(-10deg);
+    
+    margin: 0; 
+}
+
+.phone-mockup img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* --- 7. FOOTER FIXES --- */
+
+/* The main footer element now explicitly spans the full width and has the black background. */
+.footer {
+    /* Use the specified dark color (Black/Dark Gray) */
+    background-color: var(--bg-black-footer); 
+    color: #ccc;
+    /* Adjusted padding to distribute content vertically */
+    padding: 40px 0; 
+    font-size: 14px;
+}
+
+.footer a {
+    color: #ccc;
+}
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline; 
+}
+
+/* This container ensures the content inside the black footer is correctly centered and padded. */
+.footer-content {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    /* Consistent side padding for all internal footer content */
+    padding: 0 20px; 
+}
+
+/* Corrected alignment for the 4-column layout */
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-columns h4 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #444; 
+    margin: 25px 0;
+}
+
+/* Layout for the bottom row (Logo/Copyright vs. Selectors) */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligning items to the top looks better if they have different heights */
+    margin-bottom: 20px;
+}
+
+.logo-legal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Flex-wrap the text to match the screenshot if the window is narrow */
+    flex-wrap: wrap; 
+}
+
+/* Styling for the currency and country selectors */
+.language-selects {
+    display: flex;
+    gap: 10px;
+}
+.language-selects select {
+    background-color: var(--bg-black-footer);
+    color: #fff;
+    border: 1px solid #444; 
+    padding: 8px 15px;
+    border-radius: 4px;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Layout for legal links and social icons */
+.legal-links {
+    margin-bottom: 15px;
+    /* Ensure legal links span the full width of the container */
+    width: 100%; 
+}
+
+.legal-links a {
+    font-weight: 700;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #888; 
+    white-space: nowrap; /* Prevents the separators from breaking */
+}
+.legal-links a:last-child {
+    border-right: none;
+}
+
+/* Styling for social media icons */
+.social-icons {
+    /* Pushes social icons to the far right below the legal links */
+    text-align: right; 
+    width: 100%;
+}
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #444;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Styling for social media icons */
+.social-icons {
+    /* Align icons to the right, as seen in the screenshot */
+    text-align: right; 
+}
+.social-icons a {
+    display: inline-flex; /* Use flex for perfect center alignment */
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #444;
+    border-radius: 50%;
+    margin-left: 10px; /* Use margin-left to space them out */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* --- Base styles remain mostly same --- */
+/* Existing content from your style.css here... */
+
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+  .main-nav {
+    gap: 20px;
+    padding-left: 10px;
+  }
+
+  .grid-4-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plan-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-form {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .search-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .promo-banner-large {
+    height: 250px;
+  }
+
+  .grid-4-col {
+    grid-template-columns: 1fr;
+  }
+
+  .trip-plan-banner {
+    padding: 20px;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .language-selects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .search-tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-form .search-btn {
+    width: 100%;
+  }
+
+  .photo-card {
+    height: 200px;
+  }
+
+  .activity-card {
+    flex: 0 0 90%;
+  }
+}

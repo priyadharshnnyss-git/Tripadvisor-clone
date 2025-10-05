@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripAdvisor Clone (Corrected Alignment)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">🦉</span>
+                <h1>Tripadvisor</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="#">Discover</a>
+                <a href="#">Trips</a>
+                <a href="#">Review</a>
+                <a href="#">More</a>
+            </nav>
+            
+            <div class="user-actions">
+                <span class="currency">🇮🇳 INR</span>
+                <a href="#" class="signin-btn">Sign in</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="search-hero-section">
+        <div class="search-container">
+            <h2>Where to?</h2>
+            
+            <div class="search-tabs">
+                <button class="tab active">🔍 Search All</button>
+                <button class="tab">🏨 Hotels</button>
+                <button class="tab">✅ Things to Do</button>
+                <button class="tab">🍴 Restaurants</button>
+                <button class="tab">✈️ Flights</button>
+                <button class="tab">🏠 Holiday Homes</button>
+            </div>
+
+            <form class="search-form">
+                <input type="text" placeholder="Places to go, things to do, hotels..." aria-label="Search destination">
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="promo-banner-large" style="background-image: url('https://picsum.photos/1400/500?random=1');">
+        <div class="banner-overlay">
+            <p class="award-text">2025's best restaurants in the world</p>
+            <p class="tagline">Grab a bite at a top-rated spot with our Travellers' Choice Awards Best of the Best.</p>
+            <a href="#" class="reveal-btn">Reveal the winners</a>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h3>Make your next meal a winner</h3>
+        <p class="subtitle">2025's Travellers' Choice Awards Best of the Best Restaurants</p>
+        
+        <div class="grid-card-list grid-4-col">
+            <div class="photo-card" style="background-image: url('https://picsum.photos/300/400?random=2');">
+                <div class="card-label">Fine Dining</div>
+            </div>
+            <div class="photo-card" style="background-image: url('https://picsum.photos/300/400?random=3');">
+                <div class="card-label">Hidden Gems</div>
+            </div>
+            <div class="photo-card" style="background-image: url('https://picsum.photos/300/400?random=4');">
+                <div class="card-label">Casual Dining</div>
+            </div>
+            <div class="photo-card" style="background-image: url('https://picsum.photos/300/400?random=5');">
+                <div class="card-label">Vegan & Vegetarian</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section light-bg">
+        <h3>Things to do—right now</h3>
+        <p class="subtitle">Seasonal faves you don't want to miss</p>
+
+        <div class="card-scroll-container">
+            <div class="activity-card">
+                <div class="card-image" style="background-image: url('https://picsum.photos/280/200?random=6');">
+                    <button class="wishlist-btn">♡</button>
+                </div>
+                <p class="location-label">Porto</p>
+                <p class="title-text">Complete Douro Valley Wine Tour with Lunch, Wine Tastings...</p>
+                <div class="rating">
+                    <span class="score">4.9</span> (10,129)
+                </div>
+                <p class="price">from **₹10,673** per adult</p>
+            </div>
+            <div class="activity-card">
+                <div class="card-image" style="background-image: url('https://picsum.photos/280/200?random=7');">
+                    <button class="wishlist-btn">♡</button>
+                    <span class="award-badge">GB 2025</span>
+                </div>
+                <p class="location-label">Rovaniemi</p>
+                <p class="title-text">Northern Lights Rovaniemi: Guaranteed Viewing & Unlimited...</p>
+                <div class="rating">
+                    <span class="score">4.9</span> (1,511)
+                </div>
+                <p class="price">from **₹21,253** per adult</p>
+            </div>
+            <div class="activity-card">
+                <div class="card-image" style="background-image: url('https://picsum.photos/280/200?random=8');">
+                    <button class="wishlist-btn">♡</button>
+                </div>
+                <p class="location-label">Cape Town</p>
+                <p class="title-text">Full Day Guided Hermanus and Whale Tour</p>
+                <div class="rating">
+                    <span class="score">4.6</span> (163)
+                </div>
+                <p class="price">from **₹5,165** per adult</p>
+            </div>
+            <div class="activity-card">
+                <div class="card-image" style="background-image: url('https://picsum.photos/280/200?random=9');">
+                    <button class="wishlist-btn">♡</button>
+                </div>
+                <p class="location-label">Munich</p>
+                <p class="title-text">Munich Oktoberfest Guided Experience with Beer and Food</p>
+                <div class="rating">
+                    <span class="score">4.8</span> (43)
+                </div>
+                <p class="price">from **₹20,826** per adult</p>
+            </div>
+            
+            <button class="scroll-arrow">→</button>
+        </div>
+    </section>
+
+    <section class="trip-plan-banner">
+        <div class="plan-content">
+            <div class="phone-mockup">
+                <img src="https://picsum.photos/100/180?random=10" alt="Phone Mockup" style="border-radius: 10px; transform: rotate(-10deg); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+            </div>
+            <div class="plan-text">
+                <h3>Plan your trip your way</h3>
+                <p>Save your faves and more with Trips.</p>
+            </div>
+            <button class="cta-button">Get started</button>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-columns">
+                <div>
+                    <h4>About Tripadvisor</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Write a review</a></li>
+                        <li><a href="#">Help Centre</a></li>
+                        <li><a href="#">Travel Stories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Do Business With Us</h4>
+                    <ul>
+                        <li><a href="#">Owners & DMO/CVB</a></li>
+                        <li><a href="#">Business Advantage</a></li>
+                        <li><a href="#">Get The App</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Tripadvisor Sites</h4>
+                    <p>Book tours and attraction tickets on **Viator**</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+                <div class="logo-legal">
+                    <span class="logo-icon-small">🦉</span>
+                    <p>&copy; 2025 Tripadvisor LLC all rights reserved.</p>
+                </div>
+                <div class="language-selects">
+                    <select><option>₹ INR</option></select>
+                    <select><option>India</option></select>
+                </div>
+            </div>
+            <div class="legal-links">
+                <a href="#">Terms of Use</a> | 
+                <a href="#">Privacy and Cookies Statement</a> | 
+                <a href="#">Site Map</a>
+            </div>
+            <div class="social-icons">
+                <a href="#">f</a> <a href="#">X</a> <a href="#">G</a> <a href="#">P</a> <a href="#">Y</a>
+            </div>
+        </div>
+    </footer>
+    
+    <button class="ask-ollie-btn">✨ Ask Ollie</button>
+
+</body>
+</html>
+
+
